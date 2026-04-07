@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Kim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Floating nav -->
+  <nav class="floating-nav" aria-label="Page navigation">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo magnetic" data-strength="20">DK</a>
+      <div class="nav-links">
+        <a href="#about" class="magnetic" data-strength="15">About</a>
+        <a href="#education" class="magnetic" data-strength="15">Edu</a>
+        <a href="#coursework" class="magnetic" data-strength="15">Courses</a>
+        <a href="#research" class="magnetic" data-strength="15">Research</a>
+        <a href="#leadership" class="magnetic" data-strength="15">Lead</a>
+        <a href="#projects" class="magnetic" data-strength="15">Projects</a>
+        <a href="#skills" class="magnetic" data-strength="15">Skills</a>
+      </div>
+      <button class="theme-toggle magnetic" data-strength="20" aria-label="Toggle theme">
+        <span class="theme-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="top" class="hero">
+    <div class="globe-bg" aria-hidden="true">
+      <canvas id="globe-canvas"></canvas>
+    </div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-name">
+          <h1 class="glitch-text" data-text="DANIEL KIM">
+            <span class="scramble" data-final="DANIEL">DANIEL</span><br>
+            <span class="scramble" data-final="KIM">KIM</span>
+          </h1>
+          <div class="hero-line" aria-hidden="true"></div>
+        </div>
+        <div class="hero-info reveal">
+          <p class="hero-tagline split-text">Electrical Engineering &amp; Semiconductor Engineering</p>
+          <p class="hero-sub">University of Wisconsin&mdash;Madison</p>
+        </div>
+        <div class="hero-contact reveal">
+          <a href="mailto:ddkim22@wisc.edu" class="contact-link magnetic" data-strength="25">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">ddkim22@wisc.edu</span>
+          </a>
+          <a href="tel:+16084222004" class="contact-link magnetic" data-strength="25">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">608-422-2004</span>
+          </a>
+          <a href="https://www.linkedin.com/in/daniel-kim-1b6087223/" target="_blank" rel="noopener" class="contact-link magnetic" data-strength="25">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">daniel-kim &nearr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- About Me -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-grid about-grid">
+          <div class="section-label reveal">
+            <span class="section-number">00</span>
+            <h2>About Me</h2>
+          </div>
+          <div class="section-content about-content">
+            <div class="about-row reveal-up">
+              <div class="about-photo">
+                <div class="portrait-frame">
+                  <img src="profile.png" alt="Daniel Kim" width="418" height="561" loading="eager">
+                </div>
+              </div>
+              <div class="about-text">
+                <p class="about-intro">I'm an Electrical Engineering student at UW&ndash;Madison focused on semiconductor engineering. My work spans device fabrication research at the <a href="https://wbgmaterdevices.wiscweb.wisc.edu/" target="_blank" rel="noopener">Wide-Bandgap Materials and Devices Lab</a>, full-stack software development, and FPGA-based digital design. I'm passionate about building systems that bridge hardware and software to solve real-world problems.</p>
+                <p class="about-body">Beyond the lab and the codebase, I lead the KSEA Young Generation nationally, advising 37 chapters and organizing conferences for 300+ Korean-American STEM professionals. I believe in building things that matter&mdash;whether it&rsquo;s a cleaner circuit, a smarter system, or a stronger community.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-grid">
+          <div class="section-label reveal">
+            <span class="section-number">01</span>
+            <h2>Education</h2>
+          </div>
+          <div class="section-content">
+            <div class="entry reveal-up">
+              <div class="entry-header">
+                <h3>University of Wisconsin&mdash;Madison</h3>
+                <span class="date">Sep 2023 &ndash; Est. May 2027</span>
+              </div>
+              <p class="entry-subtitle">B.S. Electrical Engineering: Semiconductor Engineering</p>
+              <ul class="details">
+                <li>GPA: 3.62 / 4.0</li>
+                <li>4&times; College of Engineering Dean&rsquo;s List</li>
+                <li>Undergraduate TA &mdash; ECE 203: Signals, Information, and Computation (Fall 2026)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coursework -->
+    <section id="coursework" class="section">
+      <div class="container">
+        <div class="section-grid">
+          <div class="section-label reveal">
+            <span class="section-number">02</span>
+            <h2>Coursework</h2>
+          </div>
+          <div class="section-content">
+
+            <div class="course-category reveal-up">
+              <h4>Circuits &amp; Electronics</h4>
+              <div class="course-chips">
+                <span class="course-chip">ECE 230 &mdash; Circuit Analysis</span>
+                <span class="course-chip">ECE 270 &mdash; Circuits Laboratory I</span>
+                <span class="course-chip">ECE 271 &mdash; Circuits Laboratory II</span>
+                <span class="course-chip">ECE 340 &mdash; Electronic Circuits I</span>
+                <span class="course-chip current">ECE 342 &mdash; Electronic Circuits II</span>
+                <span class="course-chip current">ECE 370 &mdash; Advanced Laboratory</span>
+                <span class="course-chip upcoming">ECE 355 &mdash; Electromechanical Energy Conversion</span>
+                <span class="course-chip upcoming">ECE 412 &mdash; Power Electronic Circuits</span>
+              </div>
+            </div>
+
+            <div class="course-category reveal-up">
+              <h4>Semiconductor &amp; Devices</h4>
+              <div class="course-chips">
+                <span class="course-chip">ECE 222 &mdash; Electrodynamics I</span>
+                <span class="course-chip current">ECE 335 &mdash; Microelectronic Devices</span>
+                <span class="course-chip current">ECE 305 &mdash; Semiconductor Properties Lab</span>
+                <span class="course-chip upcoming">ECE 445 &mdash; Semiconductor Physics and Devices</span>
+                <span class="course-chip upcoming">ECE 466 &mdash; Electronics of Solids</span>
+                <span class="course-chip upcoming">ECE 548 &mdash; Integrated Circuit Design</span>
+                <span class="course-chip upcoming">ECE 549 &mdash; Integrated Circuit Fabrication Laboratory</span>
+              </div>
+            </div>
+
+            <div class="course-category reveal-up">
+              <h4>Signals &amp; Systems</h4>
+              <div class="course-chips">
+                <span class="course-chip">ECE 203 &mdash; Signals, Information &amp; Computation</span>
+                <span class="course-chip">ECE 330 &mdash; Signals and Systems</span>
+                <span class="course-chip">ECE 332 &mdash; Feedback Control Systems</span>
+                <span class="course-chip current">ECE 431 &mdash; Digital Signal Processing</span>
+              </div>
+            </div>
+
+            <div class="course-category reveal-up">
+              <h4>Digital Design &amp; Computer Architecture</h4>
+              <div class="course-chips">
+                <span class="course-chip">ECE 252 &mdash; Intro to Computer Engineering</span>
+                <span class="course-chip">ECE 352 &mdash; Digital System Fundamentals</span>
+                <span class="course-chip">ECE 354 &mdash; Machine Organization &amp; Programming</span>
+                <span class="course-chip">ECE 551 &mdash; Digital System Design &amp; Synthesis</span>
+                <span class="course-chip upcoming">ECE 555 &mdash; Digital Circuits and Components</span>
+              </div>
+            </div>
+
+            <div class="course-category reveal-up">
+              <h4>Mathematics &amp; Statistics</h4>
+              <div class="course-chips">
+                <span class="course-chip">MATH 234 &mdash; Multivariable Calculus</span>
+                <span class="course-chip">MATH 320 &mdash; Linear Algebra &amp; Differential Equations</span>
+                <span class="course-chip">STAT 311 &mdash; Intro Mathematical Statistics</span>
+              </div>
+            </div>
+
+            <div class="course-category reveal-up">
+              <h4>Programming</h4>
+              <div class="course-chips">
+                <span class="course-chip">COMP SCI 200 &mdash; Programming I</span>
+                <span class="course-chip">COMP SCI 300 &mdash; Programming II</span>
+              </div>
+            </div>
+
+            <div class="course-legend reveal-up">
+              <span class="legend-item"><span class="legend-dot completed"></span> Completed</span>
+              <span class="legend-item"><span class="legend-dot current"></span> In Progress</span>
+              <span class="legend-item"><span class="legend-dot upcoming"></span> Upcoming</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-grid">
+          <div class="section-label reveal">
+            <span class="section-number">04</span>
+            <h2>Research</h2>
+          </div>
+          <div class="section-content">
+            <div class="entry reveal-up">
+              <div class="entry-header">
+                <h3><a href="https://wbgmaterdevices.wiscweb.wisc.edu/" target="_blank" rel="noopener">Wide-Bandgap Materials and Devices Lab</a> &mdash; Research Intern</h3>
+                <span class="date">May 2025 &ndash; Present</span>
+              </div>
+              <p class="entry-subtitle">Advisor: Prof. Chirag Gupta &middot; Madison, WI</p>
+              <ul class="details">
+                <li>Operated wedge bonder equipment; 50+ wire bonds/week with &gt;95% yield; trained 3 grad students, reducing operating time by 40%.</li>
+                <li>TLM-based electrical measurements on MOSFET devices &mdash; 4.5&nbsp;&Omega;&middot;mm contact resistance, 2.8&nbsp;k&Omega;/sq sheet resistance.</li>
+                <li>Cleanroom operations: wafer cleaving, photolithography, resist coating, chemical handling, vapor cutting.</li>
+              </ul>
+            </div>
+            <div class="entry reveal-up">
+              <div class="entry-header">
+                <h3>Research Publication</h3>
+              </div>
+              <p class="publication-title">Observation of Impurity Band Transport in Al-rich n-AlGaN films using Low-temperature MOCVD</p>
+              <p class="publication-meta">S. Mukhopadhyay*, G. Wang, B. Challa, K. Gohel, R. A. Choudhury, J. Bajwa, Y. Gu, B. Yang, <strong>D. Kim</strong>, S. S. Pasayat &mdash; Dept. of ECE, University of Wisconsin&ndash;Madison, 2026</p>
+              <a href="n-AlGaN-EMC.pdf" target="_blank" rel="noopener" class="paper-link magnetic" data-strength="15">View Paper &nearr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership -->
+    <section id="leadership" class="section">
+      <div class="container">
+        <div class="section-grid">
+          <div class="section-label reveal">
+            <span class="section-number">05</span>
+            <h2>Leadership</h2>
+          </div>
+          <div class="section-content">
+            <div class="entry reveal-up">
+              <div class="entry-header">
+                <h3>KSEA National Board &mdash; Director</h3>
+                <span class="date">May 2025 &ndash; Present</span>
+              </div>
+              <p class="entry-subtitle">Korean-American Scientists and Engineers Association</p>
+              <ul class="details">
+                <li>Advised 37 KSEA Young Generation chapters nationwide on recruitment, funding, and cross-chapter communication.</li>
+                <li>Organized national conferences (Katalyst, IMPACTs, YG Forum) for 300+ Korean-American STEM students.</li>
+              </ul>
+            </div>
+            <div class="entry reveal-up">
+              <div class="entry-header">
+                <h3>KSEA Wisconsin Young Generation Chapter</h3>
+                <span class="date">Jan 2024 &ndash; Present</span>
+              </div>
+              <p class="entry-subtitle">Korean-American Scientists and Engineers Association</p>
+              <div class="role-timeline">
+                <div class="role-step">
+                  <span class="role-title">President</span>
+                  <span class="role-date">Jan 2026 &ndash; Present</span>
+                </div>
+                <div class="role-step">
+                  <span class="role-title">Vice President</span>
+                  <span class="role-date">Jan 2025 &ndash; Dec 2025</span>
+                </div>
+                <div class="role-step">
+                  <span class="role-title">Academic Advisor</span>
+                  <span class="role-date">Jan 2024 &ndash; Dec 2024</span>
+                </div>
+              </div>
+              <ul class="details">
+                <li>Doubled membership from 30 to 60+ through academic programs, guest lectures, debates, and mentoring.</li>
+                <li>Provided project oversight, offering guidance and support to ensure successful completion of multiple initiatives.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-grid">
+          <div class="section-label reveal">
+            <span class="section-number">06</span>
+            <h2>Projects</h2>
+          </div>
+          <div class="section-content">
+
+            <div class="project-card reveal-up" tabindex="0">
+              <div class="project-card-inner">
+                <div class="project-header">
+                  <div class="project-index">01</div>
+                  <span class="date">Jan 2026 &ndash; Present</span>
+                </div>
+                <h3>AI-Agent Productivity Platform</h3>
+                <div class="project-tags">
+                  <span>Next.js</span>
+                  <span>Spring Boot</span>
+                  <span>FastAPI</span>
+                  <span>PostgreSQL</span>
+                </div>
+                <div class="project-details">
+                  <ul class="details">
+                    <li>Full-stack system for multi-model agent collaboration, content verification, and style-aware writing generation.</li>
+                    <li>Backend AI workflows with agent debate, search-and-verify pipelines, and structured run tracking via PostgreSQL JSONB.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card reveal-up" tabindex="0">
+              <div class="project-card-inner">
+                <div class="project-header">
+                  <div class="project-index">02</div>
+                  <span class="date">Aug &ndash; Dec 2025</span>
+                </div>
+                <h3>Segway Hoverboard Digital Control System</h3>
+                <div class="project-tags">
+                  <span>SystemVerilog</span>
+                  <span>Synopsys DC</span>
+                  <span>FPGA</span>
+                </div>
+                <div class="project-details">
+                  <ul class="details">
+                    <li>FPGA-based real-time control SoC with multi-sensor gyro/accelerometer fusion, SPI/UART/A2D, and PID motor control.</li>
+                    <li>Timing closure at 333 MHz via pipelined data paths in Synopsys Design Compiler (SAED 32nm).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card reveal-up" tabindex="0">
+              <div class="project-card-inner">
+                <div class="project-header">
+                  <div class="project-index">03</div>
+                  <span class="date">Mar &ndash; Nov 2025</span>
+                </div>
+                <h3>Digital Assisted Smart Intervention App</h3>
+                <div class="project-tags">
+                  <span>Computer Vision</span>
+                  <span>Figma</span>
+                  <span>Rehabilitation</span>
+                </div>
+                <div class="project-details">
+                  <ul class="details">
+                    <li>Real-time camera input with angle-detection algorithm and human-shaped motion overlay for posture feedback.</li>
+                    <li>UI designed in Figma; demonstrated feasibility of remote posture-guided rehabilitation.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card reveal-up" tabindex="0">
+              <div class="project-card-inner">
+                <div class="project-header">
+                  <div class="project-index">04</div>
+                  <span class="date">Jul &ndash; Dec 2024</span>
+                </div>
+                <h3>Smart Night Lamp</h3>
+                <div class="project-tags">
+                  <span>Arduino Nano</span>
+                  <span>EasyEDA</span>
+                  <span>PCB Design</span>
+                </div>
+                <div class="project-details">
+                  <ul class="details">
+                    <li>Motion-activated smart lamp with PIR/LDR sensing, PWM dimming, custom PCB &mdash; standby power &lt;0.1W, ~40% energy savings.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-grid">
+          <div class="section-label reveal">
+            <span class="section-number">07</span>
+            <h2>Skills</h2>
+          </div>
+          <div class="section-content">
+            <div class="skills-group reveal-up">
+              <h4>Software</h4>
+              <div class="skills-marquee">
+                <div class="marquee-track">
+                  <span class="skill-chip magnetic" data-strength="10">Java</span>
+                  <span class="skill-chip magnetic" data-strength="10">MATLAB</span>
+                  <span class="skill-chip magnetic" data-strength="10">Assembly</span>
+                  <span class="skill-chip magnetic" data-strength="10">SystemVerilog</span>
+                  <span class="skill-chip magnetic" data-strength="10">LTspice</span>
+                  <span class="skill-chip magnetic" data-strength="10">Arduino</span>
+                  <span class="skill-chip magnetic" data-strength="10">EasyEDA</span>
+                  <span class="skill-chip magnetic" data-strength="10">Java</span>
+                  <span class="skill-chip magnetic" data-strength="10">MATLAB</span>
+                  <span class="skill-chip magnetic" data-strength="10">Assembly</span>
+                  <span class="skill-chip magnetic" data-strength="10">SystemVerilog</span>
+                  <span class="skill-chip magnetic" data-strength="10">LTspice</span>
+                  <span class="skill-chip magnetic" data-strength="10">Arduino</span>
+                  <span class="skill-chip magnetic" data-strength="10">EasyEDA</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills-group reveal-up">
+              <h4>Technical</h4>
+              <div class="skills-marquee reverse">
+                <div class="marquee-track">
+                  <span class="skill-chip magnetic" data-strength="10">Analog &amp; Digital Circuit Design</span>
+                  <span class="skill-chip magnetic" data-strength="10">Signal Processing</span>
+                  <span class="skill-chip magnetic" data-strength="10">Soldering</span>
+                  <span class="skill-chip magnetic" data-strength="10">TLM Measurements</span>
+                  <span class="skill-chip magnetic" data-strength="10">Wedge Bonding</span>
+                  <span class="skill-chip magnetic" data-strength="10">Analog &amp; Digital Circuit Design</span>
+                  <span class="skill-chip magnetic" data-strength="10">Signal Processing</span>
+                  <span class="skill-chip magnetic" data-strength="10">Soldering</span>
+                  <span class="skill-chip magnetic" data-strength="10">TLM Measurements</span>
+                  <span class="skill-chip magnetic" data-strength="10">Wedge Bonding</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <p class="footer-copy">&copy; 2026 Daniel Kim</p>
+        <p class="footer-note">Designed with Swiss precision</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
